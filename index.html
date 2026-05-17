@@ -2,549 +2,449 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant English Teacher - Portfolio</title>
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            darkMode: 'class', // Enable dark mode with a 'dark' class on the html tag
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4F46E5', // Indigo-600
-                        secondary: '#6366F1', // Indigo-500
-                        accent: '#818CF8', // Indigo-400
-                        backgroundLight: '#F9FAFB', // Gray-50
-                        backgroundDark: '#1F2937', // Gray-800
-                        textLight: '#111827', // Gray-900
-                        textDark: '#F9FAFB', // Gray-50
-                        cardLight: '#FFFFFF', // White
-                        cardDark: '#374151', // Gray-700
-                    },
-                    maxWidth: {
-                        '7xl': '80rem', // Custom max-width for content
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Miss Rukiya Khatun, Assistant English Teacher in Lalmonirhat, Bangladesh.">
+  <meta name="keywords" content="Miss Rukiya Khatun, Assistant English Teacher, English Teacher Bangladesh, Teacher Portfolio">
+  <meta name="author" content="Miss Rukiya Khatun">
+  <meta property="og:title" content="Miss Rukiya Khatun | Assistant English Teacher">
+  <meta property="og:description" content="A warm, professional teaching portfolio for an early career English educator.">
+  <meta property="og:type" content="website">
+  <title>Miss Rukiya Khatun | Assistant English Teacher</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Lora', 'serif']
+          },
+          colors: {
+            navy: '#12325a',
+            ink: '#243044',
+            cream: '#f8f3e9',
+            skysoft: '#dceefe',
+            gold: '#c99a2e',
+            leaf: '#6f8f72'
+          },
+          boxShadow: {
+            soft: '0 18px 45px rgba(18, 50, 90, 0.10)'
+          }
         }
-    </script>
-    <link rel="stylesheet" href="style.css">
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-backgroundLight text-textLight dark:bg-backgroundDark dark:text-textDark transition-colors duration-300">
+<body class="bg-[#fbfcff] font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Sticky Navigation Bar -->
-    <header class="bg-cardLight dark:bg-cardDark shadow-md sticky top-0 z-50 transition-colors duration-300">
-        <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-primary hover:text-secondary transition-colors duration-300">Rukiya Rita</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#hero" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Home</a>
-                <a href="#about" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">About</a>
-                <a href="#skills" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Skills</a>
-                <a href="#experience" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Experience</a>
-                <a href="#education" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Education</a>
-                <a href="#achievements" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Achievements</a>
-                <a href="#portfolio" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Portfolio</a>
-                <a href="#footer" class="nav-link text-textLight dark:text-textDark hover:text-primary dark:hover:text-primary transition-colors duration-300">Contact</a>
-            </div>
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/70 bg-white/90 shadow-sm backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Primary navigation">
+      <a href="#home" class="flex items-center gap-3" aria-label="Miss Rukiya Khatun home">
+        <span class="grid h-11 w-11 place-items-center rounded-lg bg-navy text-lg font-bold text-white">RK</span>
+        <span>
+          <span class="block text-sm font-bold leading-tight text-navy sm:text-base">Miss Rukiya Khatun</span>
+          <span class="block text-xs font-medium text-slate-500">Assistant English Teacher</span>
+        </span>
+      </a>
 
-            <!-- Dark/Light Mode Toggle -->
-            <button id="theme-toggle" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-300">
-                <svg class="hidden w-6 h-6 text-gray-800 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-4.275l.707-.707M6.707 17.293l-.707.707M17.293 6.707l.707-.707M6.707 6.707l-.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z">
-                    </path>
-                </svg>
-                <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                </svg>
-            </button>
+      <div class="hidden items-center gap-1 xl:flex">
+        <!-- <a class="nav-link" href="#home">Home</a> -->
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#training">Training</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#philosophy">Philosophy</a>
+        <a class="nav-link" href="#materials">Teaching Materials</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-link" href="#references">References</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-button" class="text-textLight dark:text-textDark focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-cardLight dark:bg-cardDark py-2 transition-colors duration-300">
-            <a href="#hero" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Home</a>
-            <a href="#about" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">About</a>
-            <a href="#skills" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Skills</a>
-            <a href="#experience" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Experience</a>
-            <a href="#education" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Education</a>
-            <a href="#achievements" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Achievements</a>
-            <a href="#portfolio" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Portfolio</a>
-            <a href="#footer" class="nav-link block px-6 py-2 text-textLight dark:text-textDark hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">Contact</a>
+      <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-navy transition hover:border-navy hover:bg-skysoft xl:hidden" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-100 bg-white xl:hidden">
+      <div class="mx-auto grid max-w-7xl gap-1 px-4 py-4 sm:px-6">
+        <!-- <a class="mobile-link" href="#home">Home</a> -->
+        <a class="mobile-link" href="#about">About</a>
+        <a class="mobile-link" href="#education">Education</a>
+        <a class="mobile-link" href="#skills">Skills</a>
+        <a class="mobile-link" href="#training">Training</a>
+        <a class="mobile-link" href="#experience">Experience</a>
+        <a class="mobile-link" href="#philosophy">Philosophy</a>
+        <a class="mobile-link" href="#materials">Teaching Materials</a>
+        <a class="mobile-link" href="#achievements">Achievements</a>
+        <a class="mobile-link" href="#references">References</a>
+        <a class="mobile-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="relative overflow-hidden bg-[linear-gradient(135deg,#ffffff_0%,#f8f3e9_44%,#dceefe_100%)] pt-28 lg:pt-32">
+      <div class="absolute left-6 top-32 hidden text-3xl text-gold/50 float-one lg:block"><i class="fa-solid fa-book-open"></i></div>
+      <div class="absolute right-20 top-36 hidden text-3xl text-navy/20 float-two lg:block"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="absolute bottom-20 left-20 hidden text-3xl text-leaf/35 float-three lg:block"><i class="fa-solid fa-pencil"></i></div>
+      <div class="absolute bottom-28 right-10 hidden text-3xl text-gold/45 float-one lg:block"><i class="fa-solid fa-a"></i></div>
+
+      <div class="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl items-center gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
+        <div class="reveal">
+          <p class="mb-5 inline-flex items-center gap-2 rounded-lg border border-gold/30 bg-white/70 px-4 py-2 text-sm font-semibold text-navy shadow-sm">
+            <i class="fa-solid fa-chalkboard-user text-gold" aria-hidden="true"></i>
+            Newly appointed English educator in Bangladesh
+          </p>
+          <h1 class="font-serif text-5xl font-bold leading-tight text-navy sm:text-6xl lg:text-7xl">Rukiya Rita</h1>
+          <p class="mt-5 text-xl font-semibold text-gold sm:text-2xl">Assistant English Teacher</p>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+            A passionate, dedicated, and student-friendly English teacher focused on communication skills, creativity,
+            positive classroom engagement, and confident language learning for every student.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="resume.html" class="btn-primary" download="Miss_Rukiya_Khatun_Resume.html">
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download Resume
+            </a>
+            <a href="#experience" class="btn-secondary">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              View Experience
+            </a>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="w-full bg-backgroundLight py-20 md:py-0 flex items-center justify-center min-h-screen-75 section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12 md:min-h-[calc(100vh-80px)]">
-                <!-- Left Part: Text Content -->
-                <div class="md:w-4/6 text-center md:text-left order-2 md:order-1">
-                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-textLight dark:text-textDark">Rukiya Rita</h1>
-                    <p class="text-xl md:text-2xl font-light mb-2 text-gray-700 dark:text-gray-300">Assistant English Teacher</p>
-                    <p class="text-lg md:text-xl mb-8 text-gray-600 dark:text-gray-400">Phakal Police Lines School & College, Lalmonirhat</p>
-                    <p class="text-md md:text-lg italic mb-6 text-gray-500 dark:text-gray-400">“Passionate about language, literature, and student growth”</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#portfolio" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl">
-                            <i class="fas fa-folder-open mr-2"></i> View Portfolio
-                        </a>
-                        <a href="#" class="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-all flex items-center shadow-lg">
-                            <i class="fas fa-download mr-2"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
-                <!-- Right Part: SVG Image -->
-                <div class="md:w-2/6 flex justify-center items-center order-1 md:order-2">
-                    <!-- Placeholder SVG for Teacher Taking Class -->
-                    <svg class="w-full max-w-md h-auto text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                        <line x1="12" y1="18" x2="12" y2="22"></line>
-                        <line x1="9" y1="21" x2="15" y2="21"></line>
-                        <path d="M12 12l-2 2-2-2"></path>
-                        <path d="M12 12l2 2 2-2"></path>
-                        <path d="M12 12v-4"></path>
-                        <path d="M8 10h8"></path>
-                        <path d="M8 14h8"></path>
-                        <path d="M8 18h8"></path>
-                    </svg>
-                    <!-- You can replace the above SVG with a more detailed one -->
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="w-full py-16 md:py-24 bg-cardLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-12">
-                <!-- About Text -->
-                <div class="w-full text-center">
-                    <h2 class="text-4xl font-bold mb-6 text-primary dark:text-accent">About Me</h2>
-                    <p class="text-lg leading-relaxed mb-4 text-gray-700 dark:text-gray-300 mx-auto">
-                        Hello! I'm Rukiya Rita, an Assistant English Teacher at Phakal Police Lines School & College, Lalmonirhat. With a strong academic background in English Literature and Linguistics, I am dedicated to fostering a love for
-                        language and learning in my students.
-                    </p>
-                    <p class="text-lg leading-relaxed mb-4 text-gray-700 dark:text-gray-300 mx-auto">
-                        My teaching philosophy centers on creating an engaging and interactive classroom environment where students feel empowered to explore, question, and express themselves. I believe in tailoring teaching methods to suit diverse
-                        learning styles, ensuring every student has the opportunity to thrive.
-                    </p>
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mx-auto">
-                        I have X years of experience teaching English to various age groups, focusing on grammar, literature analysis, communication skills, and preparing students for standardized tests like IELTS. I am committed to continuous
-                        professional development and integrating innovative teaching strategies.
-                    </p>
-                </div>
-
-                <!-- Philosophy & Interests Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Philosophy Card -->
-                    <div class="bg-backgroundLight dark:bg-backgroundDark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 glow-on-hover border border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center mb-4">
-                            <svg class="w-10 h-10 text-primary mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
-                                </path>
-                            </svg>
-                            <h3 class="text-2xl font-bold text-textLight dark:text-textDark">Teaching Philosophy</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300">
-                            I believe education is a collaborative journey where the teacher acts as a facilitator rather than a mere transmitter of knowledge. My approach emphasizes critical thinking, creativity, and real‑world application, ensuring
-                            students not only learn English but also develop the confidence to use it effectively.
-                        </p>
-                        <ul class="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Student‑centered, interactive lessons</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Differentiated instruction for diverse learners</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <span>Focus on lifelong learning skills</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Interests Card -->
-                    <div class="bg-backgroundLight dark:bg-backgroundDark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 glow-on-hover border border-gray-200 dark:border-gray-700">
-                        <div class="flex items-center mb-4">
-                            <svg class="w-10 h-10 text-primary mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <h3 class="text-2xl font-bold text-textLight dark:text-textDark">Personal Interests</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300">
-                            Beyond the classroom, I enjoy exploring literature, writing short stories, and staying updated with educational technology. These interests enrich my teaching and help me connect with students on a more personal level.
-                        </p>
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">Classic Literature</span>
-                            <span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">Creative Writing</span>
-                            <span class="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium">EdTech Tools</span>
-                            <span class="px-4 py-2 bg-green-500/10 text-green-600 rounded-full text-sm font-medium">Language Learning</span>
-                            <span class="px-4 py-2 bg-purple-500/10 text-purple-600 rounded-full text-sm font-medium">Cultural Exchange</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="w-full py-16 md:py-24 bg-backgroundLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center mb-12 text-primary dark:text-accent">My Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Skill Item: Grammar & Syntax -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Grammar & Syntax</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Expertise in teaching complex grammatical structures and sentence formation.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[95%]"></div>
-                        </div>
-                    </div>
-                    <!-- Skill Item: Literature Analysis -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.794 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.794 5 16.5 5c1.706 0 3.332.477 4.5 1.253v13C19.832 18.477 18.206 18 16.5 18c-1.706 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Literature Analysis</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Guiding students through critical analysis of various literary genres.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[90%]"></div>
-                        </div>
-                    </div>
-                    <!-- Skill Item: Communication Skills -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Communication Skills</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Developing effective oral and written communication abilities.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[92%]"></div>
-                        </div>
-                    </div>
-                    <!-- Skill Item: IELTS Preparation -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">IELTS Preparation</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Comprehensive training for all modules of the IELTS examination.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[88%]"></div>
-                        </div>
-                    </div>
-                    <!-- Skill Item: Curriculum Development -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Curriculum Development</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Designing engaging and effective English language curricula.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[85%]"></div>
-                        </div>
-                    </div>
-                    <!-- Skill Item: Classroom Management -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h2a2 2 0 002-2V7a2 2 0 07h.01M4 3h.01M17 15h.01M17 11h.01M17 7h.01M17 3h.01M12 21h.01M12 17h.01M12 13h.01M12 9h.01M12 5h.01"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Classroom Management</h3>
-                        </div>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">Creating a positive and productive learning environment.</p>
-                        <div class="progress-bar">
-                            <div class="progress-bar-fill w-[93%]"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="w-full py-16 md:py-24 bg-cardLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center mb-12 text-primary dark:text-accent">Experience</h2>
-                <div class="timeline">
-                    <!-- Experience Item 1 -->
-                    <div class="timeline-item bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Assistant English Teacher</h3>
-                        <p class="text-primary dark:text-accent mb-1">Phakal Police Lines School & College, Lalmonirhat</p>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3">January 2020 - Present</p>
-                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                            <li>Designed and delivered engaging English lessons for grades 6-12.</li>
-                            <li>Implemented innovative teaching methodologies to improve student comprehension and participation.</li>
-                            <li>Assessed student progress and provided constructive feedback.</li>
-                            <li>Organized extracurricular activities to enhance language skills.</li>
-                        </ul>
-                    </div>
-                    <!-- Experience Item 2 -->
-                    <div class="timeline-item bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">English Language Instructor</h3>
-                        <p class="text-primary dark:text-accent mb-1">Local Language Institute, Lalmonirhat</p>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3">June 2018 - December 2019</p>
-                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                            <li>Taught spoken English and IELTS preparation courses to adult learners.</li>
-                            <li>Developed customized lesson plans based on student needs.</li>
-                            <li>Conducted mock tests and provided strategies for exam success.</li>
-                        </ul>
-                    </div>
-                    <!-- Experience Item 3 -->
-                    <div class="timeline-item bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Teaching Assistant (Volunteer)</h3>
-                        <p class="text-primary dark:text-accent mb-1">University of Dhaka, English Department</p>
-                        <p class="text-gray-600 dark:text-gray-400 mb-3">September 2017 - May 2018</p>
-                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                            <li>Assisted professors with grading assignments and conducting tutorials.</li>
-                            <li>Provided one-on-one support to undergraduate students.</li>
-                            <li>Facilitated discussion groups on literary texts.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="w-full py-16 md:py-24 bg-backgroundLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center mb-12 text-primary dark:text-accent">Education</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Education Item 1 -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Master of Arts in English Literature</h3>
-                        <p class="text-primary dark:text-accent mb-1">University of Dhaka</p>
-                        <p class="text-gray-600 dark:text-gray-400">2017 - 2018</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Specialization in Postcolonial Literature and Critical Theory.</p>
-                    </div>
-                    <!-- Education Item 2 -->
-                    <div class="bg-cardLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Bachelor of Arts in English</h3>
-                        <p class="text-primary dark:text-accent mb-1">University of Dhaka</p>
-                        <p class="text-gray-600 dark:text-gray-400">2013 - 2017</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Focused on English Language Teaching (ELT) and British Literature.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements & Certifications Section -->
-        <section id="achievements" class="w-full py-16 md:py-24 bg-cardLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center mb-12 text-primary dark:text-accent">Achievements & Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Achievement Item 1 -->
-                    <div class="bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.519 4.674c.3.922-.755 1.688-1.539 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.539-1.118l1.519-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z">
-                                </path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Best Teacher Award</h3>
-                        </div>
-                        <p class="text-primary dark:text-accent mb-1">Phakal Police Lines School & College</p>
-                        <p class="text-gray-600 dark:text-gray-400">2023</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Recognized for outstanding dedication and innovative teaching methods.</p>
-                    </div>
-                    <!-- Achievement Item 2 -->
-                    <div class="bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">TESOL Certification</h3>
-                        </div>
-                        <p class="text-primary dark:text-accent mb-1">International TEFL and TESOL Training (ITTT)</p>
-                        <p class="text-gray-600 dark:text-gray-400">2019</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Certified to teach English to speakers of other languages.</p>
-                    </div>
-                    <!-- Achievement Item 3 -->
-                    <div class="bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">Workshop on Digital Pedagogy</h3>
-                        </div>
-                        <p class="text-primary dark:text-accent mb-1">Ministry of Education, Bangladesh</p>
-                        <p class="text-gray-600 dark:text-gray-400">2022</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Completed advanced training in integrating digital tools for effective teaching.</p>
-                    </div>
-                    <!-- Achievement Item 4 -->
-                    <div class="bg-backgroundLight dark:bg-cardDark p-6 rounded-lg shadow-md hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="flex items-center mb-3">
-                            <svg class="w-8 h-8 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-textLight dark:text-textDark">IELTS Examiner Certification</h3>
-                        </div>
-                        <p class="text-primary dark:text-accent mb-1">British Council</p>
-                        <p class="text-gray-600 dark:text-gray-400">2021</p>
-                        <p class="text-gray-700 dark:text-gray-300 mt-3">Certified IELTS examiner with expertise in assessing speaking and writing modules.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teaching Materials / Portfolio Section -->
-        <section id="portfolio" class="w-full py-16 md:py-24 bg-backgroundLight section-fade-in">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <h2 class="text-4xl font-bold text-center mb-12 text-primary dark:text-accent">Teaching Materials & Portfolio</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Portfolio Item 1 -->
-                    <div class="bg-cardLight dark:bg-cardDark rounded-lg shadow-md overflow-hidden hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="w-full h-48 flex items-center justify-center bg-primary text-white">
-                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Interactive Grammar Lesson</h3>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">A lesson plan focusing on active and passive voice for intermediate learners.</p>
-                            <a href="#" class="text-primary hover:text-secondary font-medium">View Details &rarr;</a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2 -->
-                    <div class="bg-cardLight dark:bg-cardDark rounded-lg shadow-md overflow-hidden hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="w-full h-48 flex items-center justify-center bg-primary text-white">
-                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9 20l-1 1h8l-1-1-1.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Shakespearean Sonnets Presentation</h3>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">Presentation slides for an introduction to Shakespeare's sonnets.</p>
-                            <a href="#" class="text-primary hover:text-secondary font-medium">View Details &rarr;</a>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3 -->
-                    <div class="bg-cardLight dark:bg-cardDark rounded-lg shadow-md overflow-hidden hover:shadow-xl glow-on-hover transition-all duration-300">
-                        <div class="w-full h-48 flex items-center justify-center bg-primary text-white">
-                            <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-textLight dark:text-textDark">Debate Club Guidelines</h3>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">Rules and topics for an engaging classroom debate activity.</p>
-                            <a href="#" class="text-primary hover:text-secondary font-medium">View Details &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer" class="w-full bg-backgroundDark text-textDark py-12 shadow-inner transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-            <!-- Footer Left: Contact Details -->
-            <div class="md:w-1/2 text-center md:text-left">
-                <h3 class="text-2xl font-bold mb-4 text-primary dark:text-accent">Contact Info</h3>
-                <p class="mb-2 flex items-center md:justify-start justify-center space-x-2">
-                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                    <span>teacher.rita@example.com</span>
-                </p>
-                <p class="mb-4 flex items-center md:justify-start justify-center space-x-2">
-                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                        </path>
-                    </svg>
-                    <span>+880 1XXXXXXXXX</span>
-                </p>
-                <p class="mb-4 flex items-center md:justify-start justify-center space-x-2">
-                    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span>Lalmonirhat, Bangladesh</span>
-                </p>
-                <div class="flex justify-center md:justify-start space-x-6 mb-6">
-                    <a href="https://facebook.com/yourprofile" target="_blank" class="text-gray-300 hover:text-primary transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.24.195 2.24.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-300 hover:text-primary transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer Right: Profile Summary & Action Buttons -->
-            <div class="md:w-1/2 text-center md:text-left">
-                <h3 class="text-2xl font-bold mb-4 text-primary dark:text-accent">About Rukiya Rita</h3>
-                <p class="text-gray-300 leading-relaxed mb-6">
-                    Rukiya Rita is an Assistant English Teacher dedicated to fostering a love for language and learning. With expertise in grammar, literature, and communication, she empowers students to achieve their full potential.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#" class="bg-primary text-white hover:bg-secondary px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 text-center">
-                        Download Resume
-                    </a>
-                    <a href="#experience"
-                        class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 text-center">
-                        View Experience
-                    </a>
-                </div>
-            </div>
+        <div class="relative reveal" aria-label="Educational illustration of a female teacher with books and classroom elements">
+          <div class="hero-illustration">
+            <svg viewBox="0 0 760 620" role="img" aria-labelledby="heroTitle heroDesc" xmlns="http://www.w3.org/2000/svg">
+              <title id="heroTitle">Female teacher in an English classroom</title>
+              <desc id="heroDesc">A flat illustration with a teacher, students, books, letters, and classroom learning elements.</desc>
+              <rect x="42" y="80" width="676" height="440" rx="26" fill="#ffffff" />
+              <rect x="72" y="110" width="392" height="238" rx="18" fill="#12325a" />
+              <path d="M107 156h315M107 204h198M107 252h280M107 300h140" stroke="#dceefe" stroke-width="13" stroke-linecap="round" opacity=".78" />
+              <text x="102" y="152" fill="#f7cf79" font-size="34" font-family="Inter, sans-serif" font-weight="800">English</text>
+              <circle cx="597" cy="164" r="58" fill="#f8f3e9" />
+              <path d="M558 172c18-47 65-50 81 0" fill="none" stroke="#c99a2e" stroke-width="9" stroke-linecap="round" />
+              <circle cx="582" cy="153" r="11" fill="#12325a" />
+              <circle cx="618" cy="153" r="11" fill="#12325a" />
+              <path d="M585 184c14 12 30 12 44 0" fill="none" stroke="#12325a" stroke-width="7" stroke-linecap="round" />
+              <path d="M517 416c24-100 55-154 104-154s82 54 105 154" fill="#dceefe" />
+              <path d="M558 277c14 46 93 46 105 0l-19-36h-66l-20 36Z" fill="#f3b6a6" />
+              <path d="M548 244c8-46 34-72 70-72s61 25 66 72c-37 14-90 13-136 0Z" fill="#2b4873" />
+              <path d="M514 356c-66 13-112 39-136 84" stroke="#12325a" stroke-width="22" stroke-linecap="round" />
+              <path d="M608 342c30 48 74 81 122 98" stroke="#12325a" stroke-width="22" stroke-linecap="round" />
+              <rect x="414" y="421" width="156" height="46" rx="8" fill="#c99a2e" />
+              <rect x="404" y="392" width="156" height="42" rx="8" fill="#6f8f72" />
+              <rect x="95" y="414" width="108" height="64" rx="12" fill="#f8f3e9" />
+              <circle cx="128" cy="391" r="30" fill="#f3b6a6" />
+              <path d="M93 477c10-52 32-78 66-78s56 26 66 78" fill="#dceefe" />
+              <rect x="236" y="410" width="116" height="70" rx="12" fill="#f8f3e9" />
+              <circle cx="274" cy="385" r="31" fill="#d99a80" />
+              <path d="M238 478c11-55 34-82 70-82s60 27 72 82" fill="#f7cf79" />
+              <path d="M96 530h570" stroke="#12325a" stroke-width="8" stroke-linecap="round" opacity=".18" />
+              <circle cx="688" cy="92" r="30" fill="#dceefe" />
+              <text x="674" y="104" fill="#12325a" font-size="36" font-family="Inter, sans-serif" font-weight="800">A</text>
+              <rect x="469" y="88" width="92" height="34" rx="8" fill="#f7cf79" />
+              <text x="489" y="112" fill="#12325a" font-size="22" font-family="Inter, sans-serif" font-weight="800">abc</text>
+            </svg>
+          </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center mt-8 pt-8 border-t border-gray-700">
-            <p class="text-gray-500 text-sm">&copy; 2024 Rukiya Rita. All rights reserved.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>About</span>
+          <h2>Warm, organized, and student-focused.</h2>
+          <p>Miss Rukiya Khatun brings a calm academic presence, friendly communication style, and steady commitment to helping learners grow in English.</p>
         </div>
-    </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary transition-all duration-300 ease-in-out transform hover:scale-110 hidden">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-        </svg>
-    </button>
+        <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="grid gap-4 sm:grid-cols-2 reveal">
+            <article class="info-card"><i class="fa-solid fa-user-graduate"></i><span>Full Name</span><strong>Miss Rukiya Khatun</strong></article>
+            <article class="info-card"><i class="fa-solid fa-person"></i><span>Father</span><strong>Late Abdul Hakim</strong></article>
+            <article class="info-card"><i class="fa-solid fa-person-dress"></i><span>Mother</span><strong>Sabada Begum</strong></article>
+            <article class="info-card"><i class="fa-solid fa-location-dot"></i><span>Location</span><strong>Lalmonirhat, Bangladesh</strong></article>
+          </div>
+          <div class="panel reveal">
+            <h3 class="mb-4 font-serif text-3xl font-bold text-navy">Professional Biography</h3>
+            <p class="leading-8 text-slate-700">
+              Miss Rukiya Khatun is a dedicated Assistant English Teacher with a strong passion for English education,
+              classroom support, and meaningful student motivation. Her teaching approach is friendly, patient, and
+              practical, helping students build confidence in speaking, reading, writing, and everyday communication.
+            </p>
+            <p class="mt-4 leading-8 text-slate-700">
+              She values clear communication, creative lesson support, organized classroom activities, and continuous
+              learning. As an early career educator, she aims to create a positive environment where students feel safe,
+              encouraged, and excited to participate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="education" class="section bg-cream/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Education</span>
+          <h2>Academic foundation in English and science.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <span class="timeline-year">2021</span>
+            <h3>Master's Degree</h3>
+            <p>Department: English</p>
+            <p>Institution: National University</p>
+            <p>Result: 2.61 out of 4</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="timeline-year">2016-2020</span>
+            <h3>Honours</h3>
+            <p>Institution: Nilphamari Govt Mahila College, Nilphamari</p>
+            <p>Department: English | Board: National University</p>
+            <p>Result: 2.80 out of 4.00 | Passing Year: 2020</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="timeline-year">2014-2016</span>
+            <h3>HSC</h3>
+            <p>Institution: Lalkuthi Girls Women College, Rangpur</p>
+            <p>Department: Science</p>
+            <p>Result: 4.25 out of 5.00 | Passing Year: 2016</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="timeline-year">2012-2014</span>
+            <h3>SSC</h3>
+            <p>Institution: Mostofirhat Girls High School</p>
+            <p>Department: Science</p>
+            <p>Result: 4.56 out of 5.00 | Passing Year: 2014</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Skills</span>
+          <h2>Teaching, technology, and classroom strengths.</h2>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="skill-card reveal" data-level="88"><i class="fa-solid fa-file-word"></i><span>MS Word</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="82"><i class="fa-solid fa-table"></i><span>MS Excel</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="86"><i class="fa-solid fa-display"></i><span>PowerPoint</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="84"><i class="fa-solid fa-keyboard"></i><span>Data Entry</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="90"><i class="fa-solid fa-magnifying-glass"></i><span>Internet Browsing & Research</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="78"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Adobe Photoshop</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="75"><i class="fa-solid fa-pen-nib"></i><span>Adobe Illustrator</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="91"><i class="fa-solid fa-chalkboard"></i><span>Classroom Presentation</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="93"><i class="fa-solid fa-comments"></i><span>Communication Skills</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="87"><i class="fa-solid fa-people-group"></i><span>Student Management</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="89"><i class="fa-solid fa-list-check"></i><span>Lesson Planning</span><div><b></b></div></article>
+          <article class="skill-card reveal" data-level="90"><i class="fa-solid fa-lightbulb"></i><span>Creative Teaching</span><div><b></b></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="training" class="section bg-skysoft/45">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Training</span>
+          <h2>Practical certification and digital readiness.</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="cert-card reveal">
+            <i class="fa-solid fa-computer"></i>
+            <h3>Computer Office Application</h3>
+            <p>Institute: Bangladesh Computer Education (BCE)</p>
+            <p>Duration: 3 Months | Year: 2017</p>
+            <strong>Result: A</strong>
+          </article>
+          <article class="cert-card reveal">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Graphics Design</h3>
+            <p>Institute: SEIP</p>
+            <p>Duration: 6 Months | Period: 01.07.2017 - 31.12.2017</p>
+            <strong>Result: A+</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Experience</span>
+          <h2>Classroom support with care and consistency.</h2>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="experience-card reveal">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3>PHaKAL Police Lines School and College, Lalmonirhat</h3>
+                <p class="font-semibold text-gold">Assistant Teacher</p>
+              </div>
+              <span>08/10/2024 - Present</span>
+            </div>
+            <ul>
+              <li>Assisting classroom teaching</li>
+              <li>Helping students improve English communication</li>
+              <li>Preparing lesson materials</li>
+              <li>Supporting classroom activities</li>
+              <li>Conducting student evaluations</li>
+              <li>Maintaining positive learning environment</li>
+            </ul>
+          </article>
+          <article class="experience-card reveal">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3>Lalkuthi Kindergarten School</h3>
+                <p class="font-semibold text-gold">Assistant Teacher</p>
+              </div>
+              <span>01/01/2020 - 31/12/2021</span>
+            </div>
+            <ul>
+              <li>Assisting young learners</li>
+              <li>Conducting classroom activities</li>
+              <li>Helping with language development</li>
+              <li>Supporting educational events</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="section bg-navy text-white">
+      <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+        <div class="reveal">
+          <i class="fa-solid fa-quote-left mb-6 text-4xl text-gold" aria-hidden="true"></i>
+          <blockquote class="font-serif text-2xl font-semibold leading-relaxed sm:text-4xl">
+            "I believe every student has the ability to learn and express themselves confidently when guided with patience, encouragement, and creativity. My goal is to create a supportive and engaging classroom where students enjoy learning English."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials" class="section bg-cream/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Teaching Materials</span>
+          <h2>Resource ideas for active English learning.</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="material-card reveal"><i class="fa-solid fa-file-lines"></i><h3>Grammar Worksheets</h3><p>Structured practice pages for tense, sentence, and grammar improvement.</p></article>
+          <article class="material-card reveal"><i class="fa-solid fa-spell-check"></i><h3>Vocabulary Practice</h3><p>Word-building exercises for everyday classroom and exam readiness.</p></article>
+          <article class="material-card reveal"><i class="fa-solid fa-book-reader"></i><h3>Reading Activities</h3><p>Short passages with comprehension, inference, and discussion tasks.</p></article>
+          <article class="material-card reveal"><i class="fa-solid fa-microphone-lines"></i><h3>Speaking Exercises</h3><p>Pair and group activities that help students speak with confidence.</p></article>
+          <article class="material-card reveal"><i class="fa-solid fa-chart-simple"></i><h3>Classroom Presentations</h3><p>Simple visual slides for grammar, literature, and communication lessons.</p></article>
+          <article class="material-card reveal"><i class="fa-solid fa-book-open-reader"></i><h3>English Storytelling Activities</h3><p>Creative storytelling prompts that make language learning enjoyable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>Achievements & Strengths</span>
+          <h2>Professional qualities that support better learning.</h2>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="strength-card reveal"><i class="fa-solid fa-award"></i><h3>Dedicated Educator</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-comments"></i><h3>Strong Communication Skills</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-lightbulb"></i><h3>Creative Classroom Support</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-laptop-file"></i><h3>Technology-Friendly Teaching</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-heart"></i><h3>Student Motivation Ability</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-handshake-angle"></i><h3>Team Collaboration</h3></article>
+          <article class="strength-card reveal"><i class="fa-solid fa-seedling"></i><h3>Positive Learning Environment</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="section bg-skysoft/45">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="section-heading reveal">
+          <span>References</span>
+          <h2>Academic and professional references.</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="reference-card reveal">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Md. Saiful Islam</h3>
+            <p>Principal of Lalkuthi Girls School and College</p>
+            <p>Relation: Professional & Academic</p>
+            <a href="tel:01768946866">01768946866</a>
+          </article>
+          <article class="reference-card reveal">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3>Tahmina Begum</h3>
+            <p>Nilphamari Govt Mahila College, Nilphamari</p>
+            <p>Relation: Academic</p>
+            <a href="tel:01710987604">01710987604</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-navy text-white">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div>
+        <h2 class="footer-title">Contact Info</h2>
+        <ul class="footer-list">
+          <li><i class="fa-solid fa-phone"></i><a href="tel:01796125861">01796125861</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:rukiyaria9@gmail.com">rukiyaria9@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>Vill: Ratipur<br>Post: Tista-5500<br>P.S: Lalmonirhat Sadar<br>Dist: Lalmonirhat</span></li>
+        </ul>
+        <div class="mt-5 flex gap-3">
+          <a class="social-btn" href="https://wa.me/8801796125861" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a class="social-btn" href="#" aria-label="Facebook profile placeholder"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-btn" href="#" aria-label="LinkedIn profile placeholder"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Career Details</h2>
+        <ul class="footer-list">
+          <li><i class="fa-solid fa-briefcase"></i><span>Current Position: Assistant Teacher</span></li>
+          <li><i class="fa-solid fa-language"></i><span>Specialization: English</span></li>
+          <li><i class="fa-solid fa-chart-line"></i><span>Experience Level: Early Career Educator</span></li>
+          <li><i class="fa-solid fa-comments"></i><span>Languages: Bengali & English</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Resume Download</h2>
+        <p class="mb-5 text-sm leading-7 text-white/75">Download a resume copy for school records, interviews, or academic reference.</p>
+        <a href="resume.html" class="btn-footer" download="Miss_Rukiya_Khatun_Resume.html"><i class="fa-solid fa-download"></i> Download Resume</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 px-4 py-6 text-center text-sm text-white/70">
+      © 2026 Miss Rukiya Khatun. All Rights Reserved.
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
