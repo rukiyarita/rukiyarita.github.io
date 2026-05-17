@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = Array.from(document.querySelectorAll('.nav-link, .mobile-link'));
   const sections = Array.from(document.querySelectorAll('main section, footer#contact'));
   const revealItems = document.querySelectorAll('.reveal');
-  const skillCards = document.querySelectorAll('.skill-card');
 
   menuButton.addEventListener('click', () => {
     const isOpen = !mobileMenu.classList.contains('hidden');
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.14 });
 
   revealItems.forEach((item) => revealObserver.observe(item));
-  skillCards.forEach((card) => revealObserver.observe(card));
 
   const setActiveLink = () => {
     const scrollPosition = window.scrollY + 130;
