@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = Array.from(document.querySelectorAll('.nav-link, .mobile-link'));
   const sections = Array.from(document.querySelectorAll('main section, footer#contact'));
   const revealItems = document.querySelectorAll('.reveal');
+  const typedText = document.getElementById('typedText');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   menuButton.addEventListener('click', () => {
     const isOpen = !mobileMenu.classList.contains('hidden');
@@ -66,4 +68,51 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  if (typedText) {
+    const phrases = [
+      'Assistant English Teacher',
+      'Guiding students with patience and creativity',
+      'Building confidence through English learning',
+      'Committed to clear communication and care'
+    ];
+
+    if (prefersReducedMotion) {
+      typedText.textContent = phrases[0];
+      return;
+    }
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typePhrase = () => {
+      const phrase = phrases[phraseIndex];
+      typedText.textContent = phrase.slice(0, charIndex);
+
+      if (!isDeleting && charIndex < phrase.length) {
+        charIndex += 1;
+        window.setTimeout(typePhrase, 55);
+        return;
+      }
+
+      if (!isDeleting && charIndex === phrase.length) {
+        isDeleting = true;
+        window.setTimeout(typePhrase, 1600);
+        return;
+      }
+
+      if (isDeleting && charIndex > 0) {
+        charIndex -= 1;
+        window.setTimeout(typePhrase, 28);
+        return;
+      }
+
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      window.setTimeout(typePhrase, 250);
+    };
+
+    typePhrase();
+  }
 });
