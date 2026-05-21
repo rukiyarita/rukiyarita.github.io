@@ -100,13 +100,6 @@ body {
   transform: translateY(-2px);
 }
 
-.hero-illustration {
-  animation: gentle-rise 7s ease-in-out infinite;
-  filter: drop-shadow(0 28px 42px rgba(18, 50, 90, 0.16));
-  margin-inline: auto;
-  max-width: 680px;
-}
-
 .hero-type {
   min-height: 2.25rem;
 }
@@ -515,16 +508,6 @@ body {
   animation: float-three 8s ease-in-out infinite;
 }
 
-@keyframes gentle-rise {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 @keyframes float-one {
   0%,
   100% {
@@ -579,10 +562,6 @@ body {
 @media (max-width: 768px) {
   .section {
     padding-block: 4rem;
-  }
-
-  .hero-illustration {
-    max-width: 520px;
   }
 
   .experience-card > div {
